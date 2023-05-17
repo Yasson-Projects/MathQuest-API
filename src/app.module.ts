@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { QuestionLists } from './libs/typeorm/questions.entity';
 import { config } from 'dotenv';
 import { QuestionsmathModule } from './questionsmath/questionsmath.module';
+import { ClientRequest } from './libs/typeorm/client.entity';
 config();
 console.log('------- Mathquest Api -------');
 @Module({
@@ -17,7 +18,7 @@ console.log('------- Mathquest Api -------');
       username: process.env.USERNAME_DB,
       password: process.env.PASSWORD_DB,
       database: process.env.DATABASE,
-      entities: [QuestionLists],
+      entities: [QuestionLists, ClientRequest],
       synchronize: true,
       // logging: false,
     }),
