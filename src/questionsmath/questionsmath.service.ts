@@ -15,8 +15,10 @@ export class QuestionsmathService {
     private questRequest: Repository<ClientRequest>,
   ) {}
   async createQuest(quest: QuestionDto, ip: string) {
+    const isData = await this.questRepository.findOneBy({
+      question: quest.question,
+    });
     const newDate = this.questRepository.create(quest);
-    const isData = this.questRepository.findOneBy({ question: quest.question });
     const dataClient = await this.questRequest.findOneBy({
       client_address: ip,
     });

@@ -7,23 +7,9 @@ import axios from 'axios';
 export class QuestionsmathController {
   constructor(private readonly questService: QuestionsmathService) {}
 
-  @Get('mathquestion/:id')
-  async getQuest(@Param('id') id: number) {
-    return await this.questService.getOne(id);
-  }
-
   @Get('mathquestion/all')
-  async findQuestions() {
-    const list = await this.questService.getAll();
-    return list;
-  }
-
-  @Post('mathquestion/create')
-  async createQuestion(@Body() body: QuestionDto) {
-    const cl: any = await axios.get(process.env.GET_IP);
-    const ipe = cl.data.ip;
-    await this.questService.client_request(ipe);
-    return this.questService.createQuest(body, ipe);
+  async findAll() {
+    return await this.questService.getAll();
   }
 
   @Get('mathquestion/random')
@@ -34,5 +20,18 @@ export class QuestionsmathController {
   @Get('mathquestion/random/:category')
   async getRandCategory(@Param('category') category: string) {
     return await this.questService.getRandomCategory(category);
+  }
+
+  @Get('mathquestion/:id')
+  async getQuest(@Param('id') id: number) {
+    return await this.questService.getOne(id);
+  }
+
+  @Post('mathquestion/create')
+  async createQuestion(@Body() body: QuestionDto) {
+    const cl: any = await axios.get(process.env.GET_IP);
+    const ipe = cl.data.ip;
+    await this.questService.client_request(ipe);
+    return this.questService.createQuest(body, ipe);
   }
 }

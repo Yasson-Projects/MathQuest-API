@@ -11,7 +11,7 @@ Esta es la lista de peticiones que puedes hacer
 
 ### GET
 <pre><code>http://localhost:3000/api</code></pre>
-<pre><code>http://localhost:3000/api/mathquestion/all - 🚫</code></pre>
+<pre><code>http://localhost:3000/api/mathquestion/all</code></pre>
 <pre><code>http://localhost:3000/api/mathquestion/{id}</code></pre>
 <pre><code>http://localhost:3000/api/mathquestion/random</code></pre>
 <pre><code>http://localhost:3000/api/mathquestion/random/{category}</code></pre>

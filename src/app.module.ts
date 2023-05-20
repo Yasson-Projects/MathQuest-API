@@ -7,20 +7,24 @@ import { QuestionLists } from './libs/typeorm/questions.entity';
 import { config } from 'dotenv';
 import { QuestionsmathModule } from './questionsmath/questionsmath.module';
 import { ClientRequest } from './libs/typeorm/client.entity';
+import { URL } from 'url';
+
 config();
 console.log('------- Mathquest Api -------');
+const dbUrl = new URL(process.env.DATABASE_URL);
+const routingId = dbUrl.searchParams.get('options');
+dbUrl.searchParams.delete('options');
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: process.env.HOST_DB,
-      // port: process.env.PORT_DB,
-      username: process.env.USERNAME_DB,
-      password: process.env.PASSWORD_DB,
-      database: process.env.DATABASE,
+      type: 'cockroachdb',
+      url: dbUrl.toString(),
       entities: [QuestionLists, ClientRequest],
       synchronize: true,
-      // logging: false,
+      ssl: true,
+      extra: {
+        options: routingId,
+      },
     }),
     ConfigModule.forRoot(),
     QuestionsmathModule,
