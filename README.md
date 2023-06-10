@@ -45,3 +45,21 @@ Esta es la lista de peticiones que puedes hacer
 Maximo de peticiones post son de 100 recuerda que si quieres reiniciar tus request unete al servidor de [discord](https://discord.gg/jDHbvhzPmQ) de acuerdo a tus necesidades
 <pre><code>https://mathquest-api.onrender.com/api/mathquestion/create</code></pre>
 
+#### Esquema preguntas
+Este esquema de preguntas se envia en el requerimiento de body tipo json:
+<pre>
+<code>
+```json
+{
+  "category": "",
+  "question": "",
+  "r1": ,
+  "r2": ,
+  "r3": ,
+  "r4": ,
+  "correct": 
+}
+```
+</code>
+</pre>
+
