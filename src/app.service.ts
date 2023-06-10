@@ -5,14 +5,15 @@ export class AppService {
   private readonly logger = new Logger(AppService.name);
 
   async getHello() {
-    const start = Date.now();
+    const start = await Date.now();
 
-    const duration = Date.now() - start;
+    const duration = (await Date.now()) - start;
     this.logger.log(`${duration}ms`);
 
     return {
       api: 'Mathquest-Api',
       ping: duration,
+      docs: 'https://github.com/Yasson-Projects/MathQuest-API/blob/main/README.md',
     };
   }
 }
