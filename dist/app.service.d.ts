@@ -3,5 +3,6 @@ export declare class AppService {
     getHello(): Promise<{
         api: string;
         ping: number;
+        docs: string;
     }>;
 }

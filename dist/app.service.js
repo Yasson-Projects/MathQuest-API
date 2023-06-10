@@ -14,12 +14,13 @@ let AppService = AppService_1 = class AppService {
         this.logger = new common_1.Logger(AppService_1.name);
     }
     async getHello() {
-        const start = Date.now();
-        const duration = Date.now() - start;
+        const start = await Date.now();
+        const duration = (await Date.now()) - start;
         this.logger.log(`${duration}ms`);
         return {
             api: 'Mathquest-Api',
             ping: duration,
+            docs: 'https://github.com/Yasson-Projects/MathQuest-API/blob/main/README.md',
         };
     }
 };

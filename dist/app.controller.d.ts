@@ -6,5 +6,6 @@ export declare class AppController {
     getHello(): Promise<{
         api: string;
         ping: number;
+        docs: string;
     }>;
 }
