@@ -5,15 +5,23 @@
 **Class proyect: `A`**
 
 Esto es una api de preguntas matematicas de operaciones, creada en Yasson projects, este proyecto esta en fase alfa por ahora, si quieres apoyar el proyecto para el hosting recuerda hablar en instagram como @ljuanda_castro para recibir donaciones (solo por nequi colombia)
+
 # Categoria de preguntas
 <table>
   <tr>
     <th>Categoria</th>
   </tr>
   <tr>
-    <td>VII</td>
+    <td>Multiplicacion y division</td>
+  </tr>
+  <tr>
+    <td>Suma y resta</td>
+  </tr>
+  <tr>
+    <td>Potenciación y raices</td>
   </tr>
 </table>
+
 # HTTP Requests
 Esta es la lista de peticiones que puedes hacer
 
