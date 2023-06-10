@@ -9,16 +9,24 @@ Esto es una api de preguntas matematicas de operaciones, creada en Yasson projec
 # Categoria de preguntas
 <table>
   <tr>
+    <th>Prefijo</th>
     <th>Categoria</th>
   </tr>
   <tr>
+    <td>A</td>
     <td>Multiplicacion y division</td>
   </tr>
   <tr>
+    <td>B</td>
     <td>Suma y resta</td>
   </tr>
   <tr>
+    <td>C</td>
     <td>Potenciación y raices</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>Multiplicacion y potenciacion</td>
   </tr>
 </table>
 
