@@ -62,3 +62,7 @@ Este esquema de preguntas se envia en el requerimiento de body tipo json:
 </pre>
 [!] - *En las propiedades r1, r2.. va un numero entero por ahora no soporta decimales*
 
+## Soporte 
+
+
+Tienes alguna duda o deseas reportar algún problema de la api unete a nuestro [discord](https://discord.gg/jDHbvhzPmQ), tambien contactame por instagram como [ljuanda_castro](https://www.instagram.com/ljuanda_castro/) ;)
