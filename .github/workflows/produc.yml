@@ -1,0 +1,14 @@
+name: Production workflow
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  production:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: echo the message
+        run: |
+          echo "hello workflow"
