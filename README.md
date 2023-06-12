@@ -1,8 +1,8 @@
+[![Production workflow](https://github.com/Yasson-Projects/MathQuest-API/actions/workflows/produc.yml/badge.svg)](https://github.com/Yasson-Projects/MathQuest-API/actions/workflows/produc.yml)
+
 <p align="center">
   <img src="./assets/nestjs.png">
 </p>
-
-[![Production workflow](https://github.com/Yasson-Projects/MathQuest-API/actions/workflows/produc.yml/badge.svg)](https://github.com/Yasson-Projects/MathQuest-API/actions/workflows/produc.yml)
 
 **Class proyect: `A`**
 
