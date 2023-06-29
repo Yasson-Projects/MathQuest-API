@@ -8,6 +8,7 @@ import { config } from 'dotenv';
 import { QuestionsmathModule } from './questionsmath/questionsmath.module';
 import { ClientRequest } from './libs/typeorm/client.entity';
 import { URL } from 'url';
+import { ClientModule } from './client/client.module';
 
 config();
 console.log('------- Mathquest Api -------');
@@ -28,6 +29,7 @@ dbUrl.searchParams.delete('options');
     }),
     ConfigModule.forRoot(),
     QuestionsmathModule,
+    ClientModule,
   ],
   controllers: [AppController],
   providers: [AppService],

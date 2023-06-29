@@ -17,6 +17,7 @@ const dotenv_1 = require("dotenv");
 const questionsmath_module_1 = require("./questionsmath/questionsmath.module");
 const client_entity_1 = require("./libs/typeorm/client.entity");
 const url_1 = require("url");
+const client_module_1 = require("./client/client.module");
 (0, dotenv_1.config)();
 console.log('------- Mathquest Api -------');
 const dbUrl = new url_1.URL(process.env.DATABASE_URL);
@@ -39,6 +40,7 @@ AppModule = __decorate([
             }),
             config_1.ConfigModule.forRoot(),
             questionsmath_module_1.QuestionsmathModule,
+            client_module_1.ClientModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

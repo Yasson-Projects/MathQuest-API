@@ -41,7 +41,7 @@ Esta es la lista de peticiones que puedes hacer
 <pre><code>https://mathquest-api.onrender.com/api/mathquestion/{id}</code></pre>
 <pre><code>https://mathquest-api.onrender.com/api/mathquestion/random</code></pre>
 <pre><code>https://mathquest-api.onrender.com/api/mathquestion/random/{category}</code></pre>
-
+<pre><code>https://mathquest-api.onrender.com/api/client/requests/me</code></pre> - *Mira tus requests*
 
 ### POST
 Maximo de peticiones post son de 100 recuerda que si quieres reiniciar tus request unete al servidor de [discord](https://discord.gg/jDHbvhzPmQ) de acuerdo a tus necesidades
