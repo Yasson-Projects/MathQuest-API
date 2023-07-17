@@ -1,5 +1,6 @@
+import { CategoryType } from 'src/libs/confs';
 export declare class QuestionDto {
-    category: string;
+    category: CategoryType;
     question: string;
     r1: number;
     r2: number;

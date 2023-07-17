@@ -19,6 +19,14 @@ export class QuestionsmathService {
       question: quest.question,
     });
     const newDate = this.questRepository.create(quest);
+    // const errValCategorie = {
+    //   error:
+    //     'Invalid category type to view the correct category in documentation',
+    //   status: 400,
+    // };
+    // if (quest.category !== 'A' || quest.category !== 'B') {
+    //   return errValCategorie;
+    // }
     const dataClient = await this.questRequest.findOneBy({
       client_address: ip,
     });
